@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Busqueda de un valor especifico dentro de un archivo txt">
+    <meta name="author" content="Rodrigo Pumita Himonosa">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="source/vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="source/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="source/vendor/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="source/css/style.css">
+    <title>Reader Files By Pumita</title>
+</head>
+<body>
+
+<div class="jumbotron">
+
+    <h2 class="text-center">File Reader</h2>
+
+    <div class="container top20">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Parametros de busqueda</h3>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-12 top20">
+                    <div class="row">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Ingrese texto que desea buscar..."
+                                   id="valueSearch">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 top20">
+                    <div class="row">
+                        <input type="file" class="filestyle" id="fileinput" data-buttonText=" Buscar Archivo"
+                               data-buttonName="btn-primary" data-placeholder="Seleccione un archivo"
+                               accept="text/plain"/>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-primary btn-block btn-o" id="btn-read-file" type="button"
+                        disabled>
+                    <i class="fa fa-cogs" aria-hidden="true"></i> Procesar Archivo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Resultado</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="result" readonly></textarea>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-success btn-block btn-o" id="btn-export-file" type="button"
+                        disabled>
+                    <i class="fa fa-download" aria-hidden="true"></i> Exportar Resultado
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="source/vendor/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="source/vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="source/vendor/bootstrap-filestyle-1.2.3/src/bootstrap-filestyle.min.js"></script>
+<script type="text/javascript" src="source/vendor/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="source/js/index.js"></script>
+</body>
+</html>

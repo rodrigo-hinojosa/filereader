@@ -1,4 +1,4 @@
-# file Reader JS
+# File Reader JS
 
 ## This project use the following libraries
 
